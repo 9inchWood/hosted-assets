@@ -1,0 +1,181 @@
+body {/* bodyのスタイルを決定する*/ 
+  background: white;/* bodyの背景色を淡黄色に設定する。 */
+}
+
+header {/* headerにある文字のスタイルを決定する　*/
+  text-align: center;/*　文字は真ん中に配置する　*/
+  border: 5px solid #3096bd;/*　ヘッダーの周りに5pxの青い線を引く*/
+  border-radius: 40px 40px 0px 0px;/*　Borderのボックスの右上と左上の角を40pxで丸める*/
+  background-color: #3096bd;/* ヘッダーの背景色を青い色に設定する。 */
+}
+
+.logo {
+  border: 1px solid #3096bd;
+  border-radius: 20px 20px 20px 20px;
+  background-color: white;
+  overflow: hidden;/* 要素のborderを超える部分を非表示にする */
+}
+
+header h1 {
+  color: white;/*　テキストの色を白色に決定する*/
+}
+
+.Navigation {
+  background-color: #f6ae27;/* bodyの背景色をオレンジに設定する。 */
+  text-align: center;
+  font-size: 1.8em;/*要素のテキストのフォントを1.8倍に決定する*/
+  font-weight: bold;/* テキストの厚みを決定する */
+  border: 1px solid #f6ae27;
+  margin: 10px 0px;/* 要素の上下に10pxのスペースを空ける */
+  border-radius: 0px 80px 0px 80px;
+}
+
+.Navigation p {
+  color: white;/*　テキストの色を白色に決定する*/
+}
+
+.image-l {
+  float: left;/*要素をコンテイナーの左側に配置する*/
+  position: relative;/* 要素の位置を決定する */
+  width: 475px;/* 要素の幅を475pxに決定する */
+  height: auto;/* 要素の幅に適当する高さを自動的にする（画質の劣化を防ぐ） */
+  overflow: hidden;
+  border: 1px black;
+  margin: 5px 5px 5px 0px;
+}
+
+.image-r {
+  float: left;
+  position: relative;
+  width: 475px;
+  height: auto;
+  overflow: hidden;
+  border: 1px black;
+  margin: 5px 0px 5px 5px;
+}
+
+.chuugakusei {
+  margin: 5px 0px 5px 0px;
+  position: relative;
+  float: left;
+}
+
+a {
+  color: white;
+  text-decoration: none;/* リンクが含まれるテキストは普通のテキストとして表示する */
+}
+
+.hoverme {/*　マウスを要素に重なると、showmeを表示するテキストのスタイルを決定する */
+  text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;/*テキストの周りに1pxの影（アウトライン）を表示する*/ 
+  font-size: 3em;
+  width: 475px;
+  height: 50px;
+  color: white;
+  position: absolute;
+  bottom: 60px;/*　写真の底から距離60pxに配置する */
+  left: 16px;/*　写真の左側から距離15pxに配置する */
+}
+
+.hoverme:hover + .showme {/*　hovermeにマウスを重なると、showmeを表示する*/
+  text-shadow: 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  opacity: 1;/*　showme要素の不透明度を100%にする　*/
+  transform: translateY(0);/* showmeを基の位置に帰る */
+}
+
+.hoverme:hover {
+  opacity: 0.5;
+  transition: transform 0.5s, opacity 0.5s;/*　アニメションの長さをそれぞれ0.5sに決定する（見えるようになるのに0.5s,基の位置に帰るのに0.5sがかかる)*/
+}
+
+.showme {
+  text-shadow: 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  position: absolute;
+  font-size: 2.2em;
+  color: white;
+  bottom: 8px;
+  left: 16px;
+  opacity: 0;/* 要を隠れる */
+  transform: translateY(100%);/* 要素を下に配置する */
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.showme:hover {/* マウスを重なると、そのまま置いておく　*/
+  text-shadow: 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  opacity: 0.5;
+  transform: translateY(0);
+}
+
+.container {
+  width: 960px;
+  margin-right: auto;/* コンテイナーの右側に自動的に適当なmarginを配置する */
+  margin-left: auto;/*　コンテイナーの左側に自動的に適当なmarginを配置する　*/
+}
+
+.spacefiller {/* 空欄を埋める */
+  margin: 670px 0px;
+}
+
+.Information {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: #f62740;
+  border: 1px solid #f62740;
+  margin: 10px 0px;
+  border-radius: 80px 0px 80px 0px;
+}
+
+.Information p {
+  color: white;
+}
+
+.info {
+  float: left;
+  width: 100%;
+  height: 200px;
+  background-color: aquamarine;
+  padding: 0 20px;
+  border-radius: 20px 20px 20px 20px;
+  overflow: auto;
+  margin: 0px 0px 10px 0px;
+}
+
+.info table {
+  width: 90%;
+  margin: 10px;
+}
+
+.info td {
+  border-bottom: 1px dotted black;
+  padding: 5px;
+}
+
+h2 {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+main {
+  margin-bottom: 215px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  border: 1px solid #3096bd;
+  background-color: #3096bd;
+  border-radius: 0px 0px 40px 40px;
+}

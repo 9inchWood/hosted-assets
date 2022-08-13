@@ -1,0 +1,92 @@
+<!DOCTYPE html><!--ファイルの種類を定義し，宣言-->
+<html>
+
+<head><!-- ファイルに関する情報を定義し，宣言 -->
+  　
+  <meta charset="UTF-8"><!-- HTML 文書の文字エンコーディングをUTF-8に指定する -->
+  　 <title> D4工学実験自習(Web プログラミング)で作成課題</title> <!--ファイルのタイトルを指定する-->
+  <link rel="stylesheet" href="./sanitize.css"> <!-- CSSファイルを参考し、CSSファイルで定義されたようにHTMLの内容を整理する -->
+  <link rel="stylesheet" href="./19342kadai.css">
+</head>
+
+<body><!-- ウェッブサイトの本体を定義する -->
+  <div class="container"> <!-- ContainerというHTML文書内の区切りを定義する -->
+    <header> <!-- ウェブサイトのヘッダーを定義する -->
+      <h1><a href="https://www.yonago-k.ac.jp/" target="blank">米子工業高等専門学校</a></h1> <!-- ヘッダーにリンクが含まれるテキストを挿入する -->
+      <div class="logo">
+      <img src="https://9inchwood.github.io/hosted-assets/denshisign.png" width="940" height="auto"> <!-- 写真を挿入する -->
+       </div> <!--  Containerの定義の終わり -->
+    </header> <!--  ヘッダーの定義の終わり -->
+    <main> <!--　Mainのセクションを定義する -->
+      <div class="Navigation"> <!-- ナビゲーション -->
+        <p>ナビゲーション</p> <!--　テキストを挿入する -->
+      </div>
+      <div class="image-l"> <!--　テキストが入っている写真を挿入する （左側に配置する）-->
+        <img src="https://www.yonago-k.ac.jp/denshi/img/h2_kyouiku.jpg"> <!--　写真を挿入する -->
+        <div class="hoverme"><a href="https://www.yonago-k.ac.jp/denshi/kyouiku.html" target="blank">教育目標</a></div> <!--　リンクが含まれるテキストを挿入する（マウスを乗せるとshowmeを表示する） -->
+        <div class="showme"><a href="https://www.yonago-k.ac.jp/denshi/curriculum.html" target="blank">カリキュラム</a></div> <!-- マウスを乗せると表示されるテキスト -->
+      </div>
+      <div class="image-r"> <!--　テキストが入っている写真を挿入する （右側に配置する）-->
+        <img src="https://9inchwood.github.io/hosted-assets/kigyou.jpg">
+        <div class="hoverme"><a href="https://www.yonago-k.ac.jp/denshi/kigyou.html" target="blank">企業の方へ</a></div>
+        <div class="showme"><a href="https://www.yonago-k.ac.jp/denshi/shinro.html" target="blank">卒業生の進路</a></div>
+      </div>
+      <div class="image-l">
+        <img src="https://www.yonago-k.ac.jp/denshi/img/h2_event.jpg">
+        <div class="hoverme"><a href="https://www.yonago-k.ac.jp/denshi/event.html" target="blank">イベント</a></div>
+        <div class="showme"><a href="https://www.yonago-k.ac.jp/denshi/event_oc.html" target="blank">オープンキャンパス</a></div>
+      </div>
+      <div class="image-r">
+        <img src="https://www.yonago-k.ac.jp/denshi/img/h2_robopro.jpg">
+        <div class="hoverme"><a href="https://www.yonago-k.ac.jp/denshi/robocon.html" target="blank">ロボコン</a></div>
+        <div class="showme"><a href="https://www.yonago-k.ac.jp/denshi/procon.html" target="blank">プロコン</a></div>
+      </div>
+      <div class="image-l">
+        <img src="https://www.yonago-k.ac.jp/denshi/img/h2_staff.jpg">
+        <div class="hoverme"><a href="https://www.yonago-k.ac.jp/denshi/staff.html" target="blank">スタッフ研究室紹介</a></div>
+      </div>
+      <div class="image-r">
+        <img src="https://www.yonago-k.ac.jp/denshi/img/h2_shikaku.jpg">
+        <div class="hoverme"><a href="https://www.yonago-k.ac.jp/denshi/license.html" target="blank">資格試験について</a></div>
+      </div>
+      <div class="chuugakusei"> <!--　テキストが入っている写真を挿入する （下側に配置する）-->
+        <img src="https://www.yonago-k.ac.jp/denshi/img/h2_intro.jpg" width="960" height="auto">
+        <div class="hoverme"><a href="https://www.yonago-k.ac.jp/denshi/introduction.html" target="blank">中学生の皆さんへ</a></div>
+        <div class="showme"><a href="https://www.yonago-k.ac.jp/denshi/nyushi.html" target="blank">入学試験</a>
+        <a href="https://www.yonago-k.ac.jp/denshi/event.html" target="blank">| イベント</a>
+        <a href="https://www.yonago-k.ac.jp/denshi/event_oc.html" target="blank">| オープンキャンパス</a>
+        <a href="https://www.yonago-k.ac.jp/denshi/shinro.html" target="blank">| 卒業生の進路</a>
+        </div>
+      </div>
+      <div class="spacefiller"></div> <!--　写真が残された空欄を埋める要素 -->
+      <div class="Information"> <!--　お知らせ -->
+        <p>お知らせ</p>
+      </div>
+      <div class="info">
+        <!--　情報を表として表示する要素を定義する　-->
+        <h2>最近のニュース</h2>
+        <table> <!-- テーブルを定義する -->
+          <tr> <!--　新しい行に情報を挿入する -->
+            <td>20/08/07</td> <!--　新しい列に情報を挿入する -->
+            <td>明日から夏休みです</td>
+          </tr> <!--　行のデータ挿入を終わらせる -->
+          <tr>
+            <td>20/04/06</td>
+            <td>入学式を開催しました</td>
+          </tr>
+          <tr>
+            <td>20/04/01</td>
+            <td>新年度が始まりました</td>
+          </tr>
+        </table> <!-- テーブルの定義の終わり -->
+      </div>
+    </main> <!-- Mainの定義の終わり -->
+    <footer> <!-- ウェッブサイトのフッターを定義する -->
+      <p> 〒683-8502　鳥取県米子市彦名町4448 </p> <!-- フッターにデータを挿入する -->
+      <p> ©︎National Institute of Technology, Yonago College </p>
+      <p>　<a href="https://www.yonago-k.ac.jp/denshi/inquiry.html" target="blank"> お問い合わせはこちら</a></p> <!-- お問い合わせのリンクを定義する -->
+    </footer> <!-- フッターの定義の終わり -->
+  </div> <!-- Bodyの定義の終わり -->
+</body>
+ 
+</html> <!-- ファイルの終わり -->

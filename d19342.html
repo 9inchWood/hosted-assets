@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!--ファイルの種類を定義し，宣言-->
+<html>
+<head>　<!-- ファイルに関する情報を定義し，宣言 -->
+　  <meta charset = "UTF-8"> <!-- HTML 文書の文字エンコーディングをUTF-8に指定する -->
+　  <title> D4工学実験自習(Web プログラミング)で作成１</title> <!--ファイルのタイトルを指定する-->
+  <link rel="stylesheet"href="./sanitize.css">　<!-- CSSファイルを参考し、CSSファイルで定義されたようにHTMLの内容を整理する -->
+  <link rel="stylesheet"href="./19342.css">
+</head>
+<body>　<!-- ウェッブサイトの本体を定義する -->
+<div class="container"> <!-- ContainerというHTML文書内の区切りを定義する -->
+        <header>  <!-- ウェブサイトのヘッダーを定義する -->
+        <h1>米子工業高等専門学校</h1> <!-- ヘッダーにテキストを挿入する -->
+        <nav>　<!-- 文書内の主要なナビゲーションのセクションバーを定義する -->
+		<ul class="ddmenu"> <!--　ddmenuというリストを定義し　 -->
+	    <li><a href="#">学校案内</a> <!-- リストの要素を定義する  -->
+	      <ul>
+                <li><a href="#">学校案内</a></li>
+	        <li><a href="#">校長挨拶</a></li>
+	      </ul>
+            </li>
+            <li><a href="#">学科・専攻科案内</a>
+	      <ul>
+        <li><a href="https://www.yonago-k.ac.jp/kikai/" target="blank">機械工学科</a></li>　<!--　リンクが含まれるリストの要素を定義 --> 
+		<li><a href="https://www.yonago-k.ac.jp/denki/" target="blank">電気情報工学科</a></li>
+		<li><a href="https://www.yonago-k.ac.jp/denshi/" target="blank">電子制御工学科</a></li>
+		<li><a href="https://www.yonago-k.ac.jp/material/" target="blank">物質工学科</a></li>
+		<li><a href="https://archi.yonago-k.ac.jp/" target="blank">建築学科</a></li>
+		<li><a href="https://www.yonago-k.ac.jp/ippan/" target="blank">教養教育科</a></li>
+                <li><a href="https://www.yonago-k.ac.jp/senkouka/" target="blank">専攻科</a></li>
+	      </ul>
+	    </li>
+            <li><a href="#">入学案内</a>
+	      <ul>
+	        <li><a href="#">アドミッションポリシー</a></li>
+		<li><a href="#">入学試験の概要</
+	      </ul>
+	    </li>
+	    <li><a href="#">キャンパスライフ</a>
+	      <ul>
+		<li><a href="#">年間スケジュール</a></li>
+		<li><a href="#">学生便覧</a></li>
+	      </ul>
+	    </li>
+	  </ul>
+        </nav>　<!--　ナビゲーションのセクションを終わらせる　-->
+      </header> <!--　ヘッダーのセクションを終わらせる -->
+    <main> <!--　Mainのセクションを定義する -->
+	<div class="slider">   <!--　スライダー並べる画像のセクションを定義する　-->
+        <div class="slider-w"> 
+	  <div class="slider-i"><img src="./image/1.jpg" width="960" height="370"></div>　<!--　スライダーに画像を挿入する -->
+	  <div class="slider-i"><img src="./image/2.jpg" width="960" height="370"></div>
+	  <div class="slider-i"><img src="./image/3.jpg" width="960" height="370"></div>
+	  <div class="slider-i"><img src="./image/4.jpg" width="960" height="370"></div>
+	  <div class="slider-i"><img src="./image/5.jpg" width="960" height="370"></div>
+	  <div class="slider-i"><img src="./image/6.jpg" width="960" height="370"></div>
+	  <div class="slider-i"><img src="./image/7.jpg" width="960" height="370"></div>
+	  </div>
+      </div>
+      <div class="info"> <!--　スクロール可能なテーブルのセクションを定義する　-->
+        <h2>お知らせ Information</h2>
+	<table>　<!-- テーブルを定義する -->
+          <tr>　<!--　新しい行に情報を挿入する -->
+	    <td>20/08/07</td>　<!--　新しい列に情報を挿入する -->
+	    <td>明日から夏休みです</td>
+	  </tr>　<!--　行のデータ挿入を終わらせる -->
+	  <tr>
+	    <td>20/04/06</td>
+	    <td>入学式を開催しました</td>
+	  </tr>
+	  <tr>
+	    <td>20/04/01</td>
+	    <td>新年度が始まりました</td>
+	  </tr>
+	</table>　<!-- テーブルの定義の終わり -->
+      </div>
+      <div class="pickup"> <!--　スクロール可能なテーブルのセクションを定義する　-->
+        <h3>ピックアップKOSEN!</h3>
+	<table>
+          <tr>
+	    <td>準備中！</td>
+          </tr>
+	</table>
+      </div>
+      <div class="mail"> <!--　個人情報が記入できるセクションを定義する　-->
+      　<h1>メール配信</h1>
+        　<p>以下のような情報をメールにて配信しています。</p>
+          <ul>
+	    <li>エベントに関する情報</li>
+	    <li>学生や教員の活動に関する情報</li>
+	    <li>日々の学生生活に関する情報</li>
+          </ul>
+          <p>配信を希望する場合は必要事項を記入の上、「登録」ボタンを選択してください。　</p>
+          <p><label for="mail">メールアドレス</p>
+	  <p><input id="mail" type="email" name="mail"></label></p>　<!-- メールアドレスを記入する入力欄を定義し、そのID、種類と名称も定義する-->
+	  <p><label for="pass">パスワード</p>
+	  <p><input id="pass" type="password" name="pass"></label></p>　<!-- パスワードを記入する入力欄を定義し、そのID、種類と名称も定義する-->
+	  <p><button type="submit">登録</button></p>　<!-- データを送信するボタンを定義する  -->
+	</ul>
+      </div>
+    </main>　<!-- Mainの定義の終わり -->
+    <footer>　<!-- ウェッブサイトのフッターを定義する -->
+      <p> 〒683-8502　鳥取県米子市彦名町4448 </p>　<!-- フッターにデータを挿入する -->
+      <p> ©︎National Institute of Technology, Yonago College </p>
+    </footer>　<!-- フッターの定義の終わり -->
+  </div>
+</body>　<!-- Bodyの定義の終わり -->
+</html>　<!-- ファイルの終わり -->

@@ -1,0 +1,168 @@
+body{ /* bodyのスタイルを決定する*/  
+  background-color: lightyellow; /* bodyの背景色を淡黄色に設定する。 */
+}
+
+header h1{
+  text-align: center;　/* header h1にある文字を真ん中に配置する　*/
+}
+
+.ddmenu{ /*　ddmenuのセクションのスタイルを決定する　*/
+  background-color: dimgray;　
+}
+
+.ddmenu>li{/*　ddmenuのリストのスタイルを決定する　*/
+  display: inline-block;　/*　横並びにリストの要素を表示する　*/
+  position: relative;　/*　基の位置を基準として移動する　*/
+  list-style-type: none;　/*　リスト要素に”・”と”ー”を表示しない　*/
+  width: 220px;　/*　格リスト要素の幅を２２０ｐｘに決定する　*/
+}
+
+.ddmenu li:hover ul{/*　マウスがある要素に重なると、ulに関するアクションが発生する　*/
+  display: block;　/*　ulを表示する　*/
+}
+
+.ddmenu a{
+  display: block;
+  background-color: dimgray;
+  padding: 0px 30px;/* テキストの上下に０ｐｘ、左右に３０pxのスペースを空ける */
+  color: white;/* 要素aの色を白にする */
+  line-height: 40px;/* 要素の高さを40pxにする */
+  text-align:center;
+  text-decoration:none;/* テキストの装飾を行わない */
+  font-weight:bold;/* テキストの厚みを決定する */
+}
+
+.ddmenu ul{
+  margin: 0px;/* 要素の周りに０pxのスペースを空ける */
+  padding: 0px;
+  display: none;
+  position: absolute;/* 要素の位置を決定する */
+  z-index: 1000;/* 要素の重要度を設定し、その値に基づいて他の要素よりも優先して表示する */
+}
+
+.ddmenu ul li a{
+  text-align: left;/* 要素のテキストの位置を左に並ぶ */
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+.slider{
+  width: 960px;/*　要素の幅を決定する */
+  height: 360px;/* 要素の高さを決定する */
+  overflow: hidden;/*　要素から流出するコンテンツを非表示にする */
+}
+
+.slider-w{
+  width: 700%;
+  position: relative;
+  animation: slider 14s infinite;/* 要素のアニメションの種類、長さと再生期間を決定する */
+}
+
+.slider-i{
+  float: left;/* 要素を横並びにする */
+  position: relative;
+}
+
+@keyframes slider{/* スライダーの中をいくつかの部分に図切る */
+  0% {transform:translateX(0);}
+  14% {transform:translateX(-960px);}/* スライドの１４％～２８％の位置を-９６０px～-１９２０ｐｘに決定する */
+  28% {transform:translateX(-1920px);}
+  42% {transform:translateX(-2880px);}
+  56% {transform:translateX(-3840px);}
+  71% {transform:translateX(-4800px);}
+  85% {transform:translateX(-5760px);}
+  100% {transform:translateX(0);}
+}
+
+.info{
+  float:left;
+  width: 50%;
+  height: 200px;
+  background-color: aquamarine;
+  padding: 0 20px;
+  overflow: visible scroll;/* スクロールバーを表示する */
+}
+
+.info table{
+  width: 90%;
+  margin: 10px;
+}
+
+.info td{
+  border-bottom: 1px dotted black;/* 各テーブルの要素の下に点線を表示する */
+  padding: 5px;
+}
+
+.pickup{
+  float:right;
+  width: 50%;
+  height: 200px;
+  background-color:orange;
+  padding: 0 20px;
+  overflow: visible scroll;
+}
+
+.pickup table{
+  width: 90%;
+  margin 10px;
+}
+
+.pickup td{
+  padding: 5px;
+}
+
+.container{
+  width:960px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.mail{
+  background-color:skyblue;
+  width:960px;
+  margin: 10px auto;
+  border: 1px solid black;/* 要素の周りに黒線を表示する */
+  padding: 0 30px;
+  clear:both;/* 要素の左右に別の要素がないように表示する */
+}
+
+.mail label {
+  display: block;
+  margin: 0 0 0.5em 0;
+}
+
+.mail input{
+  width: 100%;
+  margin 0 0 0.5em 0;
+  padding 8px;
+  border: 1px solid black;
+  font-size:1.2em;/* 要素のテキストのフォントを1.2倍に決定する */
+}
+
+.mail button{
+  width: 100%;
+  margin 1em 0;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 3px;/*　ボックスの角を3pxで丸める */
+  background-color:brown;
+  color: white;
+  box-shadow: 0 0 20px 0 yellow;/*　ボックスの周りの影を幅20px、色を黄色に決定する　*/
+
+}
+
+.mail button:hover{/*　マウスがある要素に重なると、buttonに関するアクションが発生する　*/
+  background-color: blue;/*　背景色を青に変更する　*/
+  color: gold;/*　テキストを金色に変更する　*/
+  box-shadow: none;/*　ボックスの影を無くす　*/
+}
+
+.mail button:active{/* ボタンが押したとき、buttonに関するアクションが発生する　*/
+  background-color: green;/*　背景色を緑に変更する　*/
+  color: silver;/*　テキストを銀色に変更する　*/
+  box-shadow: 0 0 20px 0 pink;/*　ボックスの周りの影を幅20px、色をピンクに変換する　*/
+}
+
+footer{
+text-align:center;
+}
